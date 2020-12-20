@@ -1,0 +1,28 @@
+@import './partials/all.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+#app {
+  background: url('../assets/cold-bg.jpg') bottom;
+  background-size: cover;
+  transition: 0.4s;
+}
+
+#app.warm {
+  background: url('../assets/warm-bg.jpg') bottom;
+  background-size: cover;
+}
+
+main {
+  min-height: 100vh;
+  padding: 25px;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.75));
+}
